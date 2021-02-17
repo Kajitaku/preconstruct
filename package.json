@@ -1,0 +1,21 @@
+{
+  "name": "preconstruct",
+  "version": "1.0.0",
+  "main": "dist/preconstruct.cjs.js",
+  "module": "dist/preconstruct.esm.js",
+  "repository": "git@github.com:Kajitaku/preconstruct.git",
+  "author": "Takuya Kajiyama <dev.kajiyama@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.16",
+    "@preconstruct/cli": "^2.0.4"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "preconstruct build",
+    "release": "yarn build && npm publish"
+  }
+}
