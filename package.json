@@ -3,19 +3,30 @@
   "version": "1.0.0",
   "main": "dist/preconstruct.cjs.js",
   "module": "dist/preconstruct.esm.js",
-  "repository": "git@github.com:Kajitaku/preconstruct.git",
-  "author": "Takuya Kajiyama <dev.kajiyama@gmail.com>",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kajitaku/preconstruct.git"
+  },
+  "keywords": [],
+  "author": "Takuya Kajiyama <dev.kajiyama@gmail.com> (https://github.com/Kajitaku)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kajitaku/preconstruct/issues"
+  },
+  "homepage": "https://github.com/Kajitaku/preconstruct#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@preconstruct/cli": "^2.0.4"
   },
+  "preconstruct": {
+    "entrypoints": [
+      "create.js",
+      "index.js"
+    ]
+  },
   "files": [
     "dist",
-    "src"
-  ],
-  "scripts": {
-    "build": "preconstruct build",
-    "release": "yarn build && npm publish"
-  }
+    "create"
+  ]
 }
