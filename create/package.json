@@ -1,0 +1,4 @@
+{
+  "main": "dist/preconstruct-create.cjs.js",
+  "module": "dist/preconstruct-create.esm.js"
+}
